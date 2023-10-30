@@ -9,7 +9,7 @@ import org.testng.annotations.DataProvider;
         features = {"classpath:features"},
         glue = {"stepDefinitions"},
         //selecting tag for running specific test cases - Collections
-        tags = "@login",
+        tags = "@regression",
         //Console results...(Check!)
         monochrome = true, dryRun = false,
         //Creating HTML-JSON reports after test are done

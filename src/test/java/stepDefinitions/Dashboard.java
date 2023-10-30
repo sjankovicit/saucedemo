@@ -72,4 +72,24 @@ public class Dashboard extends Base_PO {
     public void userWillBePresentedWithBurgerMenuOptions() {
         dashboard_po.checkBurgerMenuOptions();
     }
+
+    @Then("Check if Ascending logic if functional")
+    public void filterLogicAscending() {
+        dashboard_po.filterLogicCheckingMinMax();
+    }
+
+    @Then("Check if Descending logic if functional")
+    public void checkIfDescendingLogicIfFunctional() {
+        dashboard_po.filterLogicCheckingMinMax();
+    }
+
+    @Then("Check Filter Logic by Ascending")
+    public void checkFilterLogicByAscending() {
+        dashboard_po.checkSortArrayAscending();
+    }
+
+    @Then("Check Filter Logic by Descending")
+    public void checkFilterLogicByDescending() {
+        dashboard_po.checkSortArrayDescending();
+    }
 }
